@@ -1,0 +1,40 @@
+/*this iss how we write stuff */
+p, li { /*targeting all p and li elements in the html file as a whole(prioritized over id targeting)(the red words are not changed to orange)*/
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+h1 {
+    margin: 0; /*the defult value of this for h1 isn't zero. to customize it we set it to 0 first and sytle it the way we want*/
+    padding: 20px 0;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 3px 3px 1px black; /*values each are: horizontal offset, vertical offset, blur radius, color*/
+    color: white;
+}
+#introduction { /*how to target a specific id to style*/
+    color: orange;
+    border: 2px solid black;
+}
+a:hover{
+    color: red; /*only change a(anchor) when mouse is hovered over the hyperlink*/
+}
+html {
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: 'Oswald', sans-serif; /* this should be the rest of the output I got from Google fonts */
+    background-color: #FF9500;
+}
+body {
+    width: 600px;
+    margin: 0 auto; /*the first value = element's top and bottom side (setting it to 0 = no effect); the second value = left and right side. (auto = divides the available horizontal space evenly between left and right)*/
+    background-color: lightblue;
+    padding: 0 20px 20px 20px; /*padding = give how much space to the element on each side to the edge,value each is = top, right, bottom, left*/
+    border: 5px solid black;
+}
+img, video, iframe{
+    display: block; /*body is not a block element(it's an inline element. We have to use this to give it block property to let the margin function)*/
+    margin: 0 auto; /*use this trick again to center the thing*/
+}
